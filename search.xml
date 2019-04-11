@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[2019-04-10]]></title>
+    <url>%2F2019%2F04%2F10%2F2019-04-10%2F</url>
+    <content type="text"><![CDATA[好久没有发布，连文章怎么发布都要忘记了。现在记下来，省的下次还要在google一次。发布前要启动hexo 服务hexo server 1.hexo new 文章名发布文章 2.hexo cleanhexo generate hexo deploy 提交更新的内容到git库 ####然后开始愉快的写文章吧]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[2019-03-04]]></title>
+    <url>%2F2019%2F03%2F05%2F2019-03-04%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[2019-1-17]]></title>
+    <url>%2F2019%2F01%2F18%2F2019-1-17%2F</url>
+    <content type="text"><![CDATA[今天学习的内容第四章：NumPy基础：数组和矢量计算一种多维数组对象~~ 基本的索引和切片 布尔型索引 花式索引 数组转置和轴对换 通用函数：快速的元素级数组函数 利用数组进行数据处理 将条件逻辑表述为数组运算 今天大概就是这么一些内容，吸收程度不好，还要多加练习。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[2019-1-16]]></title>
+    <url>%2F2019%2F01%2F16%2F2019-1-16%2F</url>
+    <content type="text"><![CDATA[今天的学习内容第三章 数据结构和数列函数文件和操作系统第四章 numpy的nadrray（多维数组对象）Numpy数组的运算基本的索引和切片]]></content>
+      <tags>
+        <tag>tags</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+</search>
