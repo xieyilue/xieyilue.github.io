@@ -344,6 +344,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xieyilue.github.io/2019/04/18/2019-4-18/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xieyilue">
+      <meta itemprop="description" content="个人博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xieyilue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/2019-4-18/" class="post-title-link" itemprop="url">2019-4-18</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 22:32:34 / 修改时间：22:51:41" itemprop="dateCreated datePublished" datetime="2019-04-18T22:32:34+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/18/2019-4-18/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/04/18/2019-4-18/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#SSIS-MSSQL不同表抽数-导入excel</p>
+<p>##1.创建SSIS包</p>
+<p>##2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道</p>
+<p>##3.创建excel表格：表格字段类型 DECIMAL(24,6)<br>注意：excel2003-xls支持行数为500左右，需要用excel2007以上版本-xlsx<br>     month如为字段，需要[month]括号起来，防止和SSIS本身的函数相冲突</p>
+<p>##4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系<br>（注意数据库导入字段数据的类型，需要改至与excel字段类型一至)</p>
+<p>##5.执行步骤后，检查导出数据格式是否正确</p>
+<p>##6.表格名称随时间更新而变动<br>利用SSIS变量函数创建表格名称（Expressions）</p>
+<p>##7.循环按日期更新表格-执行进程任务<br>利用bat控件执行循环，删除前一日的数据（或视情况而定）</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://xieyilue.github.io/2019/04/10/2019-04-10/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1015,7 +1174,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
