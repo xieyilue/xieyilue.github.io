@@ -389,7 +389,7 @@
                 
               
 
-              <time title="创建时间：2019-04-18 22:32:34 / 修改时间：22:54:26" itemprop="dateCreated datePublished" datetime="2019-04-18T22:32:34+08:00">2019-04-18</time>
+              <time title="创建时间：2019-04-18 22:32:34 / 修改时间：22:58:26" itemprop="dateCreated datePublished" datetime="2019-04-18T22:32:34+08:00">2019-04-18</time>
             
 
             
@@ -439,10 +439,10 @@
       
         
           
-            <h1 id="SSIS-MSSQL不同表抽数-导入excel"><a href="#SSIS-MSSQL不同表抽数-导入excel" class="headerlink" title="SSIS-MSSQL不同表抽数-导入excel"></a>SSIS-MSSQL不同表抽数-导入excel</h1><h2 id="1-创建SSIS包"><a href="#1-创建SSIS包" class="headerlink" title="1.创建SSIS包"></a>1.创建SSIS包</h2><h2 id="2-创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道"><a href="#2-创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道" class="headerlink" title="2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道"></a>2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道</h2><h2 id="3-创建excel表格：表格字段类型-DECIMAL-24-6"><a href="#3-创建excel表格：表格字段类型-DECIMAL-24-6" class="headerlink" title="3.创建excel表格：表格字段类型 DECIMAL(24,6)"></a>3.创建excel表格：表格字段类型 DECIMAL(24,6)</h2><p>注意：excel2003-xls支持行数为500左右，需要用excel2007以上版本-xlsx<br>     month如为字段，需要[month]括号起来，防止和SSIS本身的函数相冲突</p>
-<h2 id="4-导入数据-抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系"><a href="#4-导入数据-抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系" class="headerlink" title="4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系"></a>4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系</h2><p>（注意数据库导入字段数据的类型，需要改至与excel字段类型一至)</p>
-<h2 id="5-执行步骤后，检查导出数据格式是否正确"><a href="#5-执行步骤后，检查导出数据格式是否正确" class="headerlink" title="5.执行步骤后，检查导出数据格式是否正确"></a>5.执行步骤后，检查导出数据格式是否正确</h2><h2 id="6-表格名称随时间更新而变动"><a href="#6-表格名称随时间更新而变动" class="headerlink" title="6.表格名称随时间更新而变动"></a>6.表格名称随时间更新而变动</h2><p>利用SSIS变量函数创建表格名称（Expressions）</p>
-<h2 id="7-循环按日期更新表格-执行进程任务"><a href="#7-循环按日期更新表格-执行进程任务" class="headerlink" title="7.循环按日期更新表格-执行进程任务"></a>7.循环按日期更新表格-执行进程任务</h2><p>利用bat控件执行循环，删除前一日的数据（或视情况而定）</p>
+            <h1 id="SSIS-MSSQL不同表抽数-导入excel"><a href="#SSIS-MSSQL不同表抽数-导入excel" class="headerlink" title="SSIS-MSSQL不同表抽数-导入excel"></a>SSIS-MSSQL不同表抽数-导入excel</h1><h3 id="1-创建SSIS包"><a href="#1-创建SSIS包" class="headerlink" title="1.创建SSIS包"></a>1.创建SSIS包</h3><h3 id="2-创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道"><a href="#2-创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道" class="headerlink" title="2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道"></a>2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道</h3><h3 id="3-创建excel表格：表格字段类型-DECIMAL-24-6"><a href="#3-创建excel表格：表格字段类型-DECIMAL-24-6" class="headerlink" title="3.创建excel表格：表格字段类型 DECIMAL(24,6)"></a>3.创建excel表格：表格字段类型 DECIMAL(24,6)</h3><p><strong>注意</strong>：excel2003-xls支持行数为500左右，需要用excel2007以上版本-xlsx<br>month如为字段，需要<del>[month]</del>括号起来，防止和SSIS本身的函数相冲突</p>
+<h3 id="4-导入数据-抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系"><a href="#4-导入数据-抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系" class="headerlink" title="4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系"></a>4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系</h3><p>（注意数据库导入字段数据的类型，需要改至与excel字段类型一至)</p>
+<h3 id="5-执行步骤后，检查导出数据格式是否正确"><a href="#5-执行步骤后，检查导出数据格式是否正确" class="headerlink" title="5.执行步骤后，检查导出数据格式是否正确"></a>5.执行步骤后，检查导出数据格式是否正确</h3><h3 id="6-表格名称随时间更新而变动"><a href="#6-表格名称随时间更新而变动" class="headerlink" title="6.表格名称随时间更新而变动"></a>6.表格名称随时间更新而变动</h3><p>利用SSIS变量函数创建表格名称（Expressions）</p>
+<h3 id="7-循环按日期更新表格-执行进程任务"><a href="#7-循环按日期更新表格-执行进程任务" class="headerlink" title="7.循环按日期更新表格-执行进程任务"></a>7.循环按日期更新表格-执行进程任务</h3><p>利用bat控件执行循环，删除前一日的数据（或视情况而定）</p>
 
           
         
