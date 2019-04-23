@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[2019-04-23]]></title>
+    <url>%2F2019%2F04%2F23%2F2019-04-23%2F</url>
+    <content type="text"><![CDATA[基本数据信息1.基本读写数据集（CSV、EXECL）pd.DataFrame.from_csv(“csv_file”) pd.read_csv(“csv_file”) df.to_csv(“data.csv”,sep=”,”,index=False) pd.read_excel(“excel_file”) df.to_execl(“data.xlsx”,sheet_name=’a’) 2.基本数据集特征df.info() 3.基本数据统计df.describe() 4.将data frames 输出到一张表里（tabulate模块）from tabulate import tabulateprint. (tabulate(print_table,headers=headers)) 5.列出所有字段df.columns 6.得到前后n行df.head(n)df.tail(n) 7.通过特征、位置定位数据df.loc([0],[‘size’])df.iloc[n] 基本数据处理8.去除缺失值df.dropna(axis=0,how=’any’) 9.替换缺失值df.replace(to_replace=None,value=None) 10.检查缺失值pd.isnull(object) 11.删除一个字段df.drop(‘feature_variable_name’,axis=1) 12.将对象类型转换为数值pd.to_numeric(df[“feature_name”],errors=’coerce’) 13.将DataFrame转换为numpy数组df.as_matrix() 操作Data Frames14.将函数应用于dataframedf[“height”].apply(lambda height:2height)def multiply(x): return x 2df[“height”].apply(multiply) 15.重命名一列df.raname(columns={df.columns[2]:’size’},inplace=True) 16.获取某列的唯一项df[“name”].unique() 17.多级访问new_df=df[[“name”,”size”]] 18.数据的一些统计量df.min()df.max()df.idxmin()返回最小索引df.idxmax()返回最大索引df.mean()df.median()df.corr() 不同列之间的相关系数df[“size”].median 19.数据排序df.sort_values(ascending=False) 20.布尔索引df[df[“size”]==5]]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[2019-4-18]]></title>
     <url>%2F2019%2F04%2F18%2F2019-4-18%2F</url>
     <content type="text"><![CDATA[SSIS-MSSQL不同表抽数-导入excel1.创建SSIS包2.创建数据连接管道：数据输入-MSSQL管道，数据输出-excel管道3.创建excel表格：表格字段类型 DECIMAL(24,6)注意：excel2003-xls支持行数为500左右，需要用excel2007以上版本-xlsxmonth如为字段，需要[month]括号起来，防止和SSIS本身的函数相冲突 4.导入数据:抽数-sql语句抽取数据库表格数据-建立与excel表格对应关系（注意数据库导入字段数据的类型，需要改至与excel字段类型一至) 5.执行步骤后，检查导出数据格式是否正确6.表格名称随时间更新而变动利用SSIS变量函数创建表格名称（Expressions） 7.循环按日期更新表格-执行进程任务利用bat控件执行循环，删除前一日的数据（或视情况而定）]]></content>

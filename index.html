@@ -344,6 +344,181 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://xieyilue.github.io/2019/04/23/2019-04-23/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xieyilue">
+      <meta itemprop="description" content="个人博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xieyilue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/23/2019-04-23/" class="post-title-link" itemprop="url">2019-04-23</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-23 22:24:09 / 修改时间：23:17:41" itemprop="dateCreated datePublished" datetime="2019-04-23T22:24:09+08:00">2019-04-23</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/23/2019-04-23/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/04/23/2019-04-23/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基本数据信息"><a href="#基本数据信息" class="headerlink" title="基本数据信息"></a>基本数据信息</h1><h2 id="1-基本读写数据集（CSV、EXECL）"><a href="#1-基本读写数据集（CSV、EXECL）" class="headerlink" title="1.基本读写数据集（CSV、EXECL）"></a>1.基本读写数据集（CSV、EXECL）</h2><p>pd.DataFrame.from_csv(“csv_file”)</p>
+<p>pd.read_csv(“csv_file”)</p>
+<p>df.to_csv(“data.csv”,sep=”,”,index=False)</p>
+<p>pd.read_excel(“excel_file”)</p>
+<p>df.to_execl(“data.xlsx”,sheet_name=’a’)</p>
+<h2 id="2-基本数据集特征"><a href="#2-基本数据集特征" class="headerlink" title="2.基本数据集特征"></a>2.基本数据集特征</h2><p>df.info()</p>
+<h2 id="3-基本数据统计"><a href="#3-基本数据统计" class="headerlink" title="3.基本数据统计"></a>3.基本数据统计</h2><p>df.describe()</p>
+<h2 id="4-将data-frames-输出到一张表里（tabulate模块）"><a href="#4-将data-frames-输出到一张表里（tabulate模块）" class="headerlink" title="4.将data frames 输出到一张表里（tabulate模块）"></a>4.将data frames 输出到一张表里（tabulate模块）</h2><p>from tabulate import tabulate<br>print. (tabulate(print_table,headers=headers))</p>
+<h2 id="5-列出所有字段"><a href="#5-列出所有字段" class="headerlink" title="5.列出所有字段"></a>5.列出所有字段</h2><p>df.columns</p>
+<h2 id="6-得到前后n行"><a href="#6-得到前后n行" class="headerlink" title="6.得到前后n行"></a>6.得到前后n行</h2><p>df.head(n)<br>df.tail(n)</p>
+<h2 id="7-通过特征、位置定位数据"><a href="#7-通过特征、位置定位数据" class="headerlink" title="7.通过特征、位置定位数据"></a>7.通过特征、位置定位数据</h2><p>df.loc([0],[‘size’])<br>df.iloc[n]</p>
+<h1 id="基本数据处理"><a href="#基本数据处理" class="headerlink" title="基本数据处理"></a>基本数据处理</h1><h2 id="8-去除缺失值"><a href="#8-去除缺失值" class="headerlink" title="8.去除缺失值"></a>8.去除缺失值</h2><p>df.dropna(axis=0,how=’any’)</p>
+<h2 id="9-替换缺失值"><a href="#9-替换缺失值" class="headerlink" title="9.替换缺失值"></a>9.替换缺失值</h2><p>df.replace(to_replace=None,value=None)</p>
+<h2 id="10-检查缺失值"><a href="#10-检查缺失值" class="headerlink" title="10.检查缺失值"></a>10.检查缺失值</h2><p>pd.isnull(object)</p>
+<h2 id="11-删除一个字段"><a href="#11-删除一个字段" class="headerlink" title="11.删除一个字段"></a>11.删除一个字段</h2><p>df.drop(‘feature_variable_name’,axis=1)</p>
+<h2 id="12-将对象类型转换为数值"><a href="#12-将对象类型转换为数值" class="headerlink" title="12.将对象类型转换为数值"></a>12.将对象类型转换为数值</h2><p>pd.to_numeric(df[“feature_name”],errors=’coerce’)</p>
+<h2 id="13-将DataFrame转换为numpy数组"><a href="#13-将DataFrame转换为numpy数组" class="headerlink" title="13.将DataFrame转换为numpy数组"></a>13.将DataFrame转换为numpy数组</h2><p>df.as_matrix()</p>
+<h1 id="操作Data-Frames"><a href="#操作Data-Frames" class="headerlink" title="操作Data Frames"></a>操作Data Frames</h1><h2 id="14-将函数应用于dataframe"><a href="#14-将函数应用于dataframe" class="headerlink" title="14.将函数应用于dataframe"></a>14.将函数应用于dataframe</h2><p>df[“height”].apply(lambda height:2<em>height)<br>def multiply(x):<br>    return x </em> 2<br>df[“height”].apply(multiply)</p>
+<h2 id="15-重命名一列"><a href="#15-重命名一列" class="headerlink" title="15.重命名一列"></a>15.重命名一列</h2><p>df.raname(columns={df.columns[2]:’size’},inplace=True)</p>
+<h2 id="16-获取某列的唯一项"><a href="#16-获取某列的唯一项" class="headerlink" title="16.获取某列的唯一项"></a>16.获取某列的唯一项</h2><p>df[“name”].unique()</p>
+<h2 id="17-多级访问"><a href="#17-多级访问" class="headerlink" title="17.多级访问"></a>17.多级访问</h2><p>new_df=df[[“name”,”size”]]</p>
+<h2 id="18-数据的一些统计量"><a href="#18-数据的一些统计量" class="headerlink" title="18.数据的一些统计量"></a>18.数据的一些统计量</h2><p>df.min()<br>df.max()<br>df.idxmin()返回最小索引<br>df.idxmax()返回最大索引<br>df.mean()<br>df.median()<br>df.corr() 不同列之间的相关系数<br>df[“size”].median</p>
+<h2 id="19-数据排序"><a href="#19-数据排序" class="headerlink" title="19.数据排序"></a>19.数据排序</h2><p>df.sort_values(ascending=False)</p>
+<h2 id="20-布尔索引"><a href="#20-布尔索引" class="headerlink" title="20.布尔索引"></a>20.布尔索引</h2><p>df[df[“size”]==5]</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://xieyilue.github.io/2019/04/18/2019-4-18/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1170,7 +1345,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
